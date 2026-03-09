@@ -20,3 +20,20 @@ const myFunction=function(){
 
 }
 console.log(typeof id)
+
+let myYtname="pp"
+let anotherName=myYtname
+anotherName="pmp"
+
+console.log(myYtname);
+console.log(anotherName);
+
+let userOne={
+    email:"user@gmail.com",
+    upi:"user@ybl"
+}
+let userTwo=userOne
+
+userTwo.email="pp@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
