@@ -1,29 +1,11 @@
-// var x=7;
-// function getname(){
-//     console.log("namaste js");
-// }
-// getname();
-// console.log(x);
-
-// getname();
-// console.log(x);
-// var x=7;
-
-// function getname(){
-//     console.log("namaste js");
-// }
-
-// var x=7;
-// function getname(){
-//     console.log("namaste js");
-// }
-// console.log(getname);
-
-getname();
-console.log(x);
-console.log(getname);
-
-var x=7;
-function getname(){
-    console.log("namaste js");
+var n=2;
+function add(a,b){
+    return a+b;
 }
+function square(num){
+    var ans=num*num;
+    console.log(add(ans,ans))
+    return ans;
+}
+var square2=square(n);
+var square4=square(4);
