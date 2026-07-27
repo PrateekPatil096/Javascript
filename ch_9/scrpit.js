@@ -8,7 +8,7 @@
 //}
 //x();
 
-function x(){
+/*function x(){
     var a=7;
 
     function y(){
@@ -18,4 +18,17 @@ function x(){
 }
 var z=x();
 console.log(z);
+z();*/
+
+function z(){
+    var b=200;
+    function x(){
+        var a=7;
+        function y(){
+            console.log(a,b);
+        }
+        y();
+    }
+    x();
+}
 z();
