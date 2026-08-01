@@ -7,3 +7,9 @@ function double(x){
 const output=arr.map(double);
 
 console.log(output);
+
+const out = arr.map((y)=>{
+     return y.toString(2);
+    });
+
+    console.log(out);
