@@ -30,3 +30,12 @@ const out = arr.map((y)=>{
     },0);
 
     console.log(op);
+
+    const outp=arr.reduce(function(max, curr){
+        if(curr>max){
+            max=curr;
+        }
+        return max;
+    }, 0);
+
+    console.log(outp);
