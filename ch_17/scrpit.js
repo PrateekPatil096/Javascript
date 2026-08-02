@@ -39,3 +39,36 @@ const out = arr.map((y)=>{
     }, 0);
 
     console.log(outp);
+
+    const users = [
+  { firstName: "akshay", lastName: "saini", age: 26 },
+  { firstName: "donald", lastName: "trump", age: 75 },
+  { firstName: "elon", lastName: "musk", age: 50 },
+  { firstName: "deepika", lastName: "padukone", age: 26 },
+];
+
+const oo=users.map((x)=>x.firstName+x.lastName);
+
+console.log(oo)
+
+const pp=users.reduce(function (acc,curr){
+    if(acc[curr.age]){
+        acc[curr.age]=++acc[curr.age];
+    }else{
+        acc[curr.age]=1;
+    }
+    return acc;
+},{});
+console.log(pp)
+
+const oopp=users.filter((x)=>x.age<30).map((x)=>x.firstName)
+console.log(oopp);
+
+const ppa=users.reduce(function(acc,curr){
+    if(curr.age<30){
+        acc.push(curr.firstName);
+    }
+    return acc;
+},[]);
+
+console.log(ppa);
