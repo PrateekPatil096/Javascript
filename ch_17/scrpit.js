@@ -13,3 +13,10 @@ const out = arr.map((y)=>{
     });
 
     console.log(out);
+
+    function greaterthan4(x){
+        return x>4;
+    }
+
+    const outt=arr.filter(greaterthan4);
+    console.log(outt);
