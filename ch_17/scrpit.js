@@ -20,3 +20,13 @@ const out = arr.map((y)=>{
 
     const outt=arr.filter(greaterthan4);
     console.log(outt);
+
+    const oupu=arr.filter((x) => x > 4);
+    console.log(oupu);
+
+    const op=arr.reduce(function (acc, curr){
+        acc=acc+curr;
+        return acc;
+    },0);
+
+    console.log(op);
