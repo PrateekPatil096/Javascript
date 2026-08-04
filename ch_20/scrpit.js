@@ -5,6 +5,10 @@ const promise = createOrder(cart);
 promise.then(function(orderId) {
     console.log(orderId)
    // proceedToPayment(orderId);
+})
+
+.catch(function (err){
+console.log(err.message);
 });
 
 function createOrder(cart) {
@@ -28,5 +32,5 @@ function createOrder(cart) {
 }
 
 function validateCart(cart){
-    return true;
+    return false;
 }
