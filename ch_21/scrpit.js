@@ -11,7 +11,7 @@ const p3=new Promise((resolve,reject)=>{
     setTimeout(()=>reject("p3 fail"),2000);
 })
 
-Promise.race([p1,p2,p3]).then((res)=>{
+Promise.any([p1,p2,p3]).then((res)=>{
     console.log(res);
 })
 .catch((err)=>{
